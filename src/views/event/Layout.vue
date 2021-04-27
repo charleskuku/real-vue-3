@@ -1,6 +1,18 @@
 <template>
-    <h1>Event Detail</h1>
-    <p>{{event.category}}</p>
+    <p>{{event.title}}</p>
+    <router-link :to="{name: 'EventDetail'}">
+      Details
+    </router-link>
+    
+    <router-link :to="{name: 'EventRegister'}">
+      Register
+    </router-link>
+
+    <router-link :to="{name: 'EventEdit'}">
+      Edit
+    </router-link>
+
+    <router-view :event="event"/>
 </template>
 
 <script>

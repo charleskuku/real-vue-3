@@ -3,7 +3,8 @@
     <!-- <router-link to="/">Home</router-link> | -->
     <!-- <router-link to="/about">About</router-link> -->
     <router-link :to="{name: 'EventList'}">Events</router-link> |
-    <router-link :to="{name: 'About'}">About</router-link>
+    <router-link :to="{name: 'About'}">About</router-link> |
+    <router-link :to="{name: 'Slots'}">Slots</router-link>
   </div>
   <router-view />
 </template>
